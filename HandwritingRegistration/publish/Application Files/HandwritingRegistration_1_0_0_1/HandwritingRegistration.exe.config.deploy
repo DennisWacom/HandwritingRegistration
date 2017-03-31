@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<configuration>
+    <configSections>
+    </configSections>
+    <connectionStrings>
+        <add name="HandwritingRegistration.Properties.Settings.Database1ConnectionString" connectionString="Data Source=|DataDirectory|\Database1.sdf" providerName="Microsoft.SqlServerCe.Client.4.0"/>
+    </connectionStrings>
+    <startup useLegacyV2RuntimeActivationPolicy="true"> 
+        
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup>
+</configuration>

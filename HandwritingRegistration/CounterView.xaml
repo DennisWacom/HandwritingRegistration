@@ -1,0 +1,18 @@
+﻿<Window x:Class="HandwritingRegistration.CounterView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CounterView" Height="500" Width="300">
+    <Grid>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Label Content="Gender" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="66"/>
+        <RadioButton x:Name="radGenderM" Content="Male" HorizontalAlignment="Left" Margin="92,82,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radGenderF" Content="Female" HorizontalAlignment="Left" Margin="170,82,0,0" VerticalAlignment="Top"/>
+        <Label Content="Contact No" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtContactNo" HorizontalAlignment="Left" Height="23" Margin="10,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="10,181,0,0" VerticalAlignment="Top" Width="272"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="10,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272"/>
+        <Image x:Name="imgSignature" HorizontalAlignment="Left" Height="193" Margin="10,245,0,0" VerticalAlignment="Top" Width="272" Source="white_space.png" Stretch="None"/>
+
+    </Grid>
+</Window>

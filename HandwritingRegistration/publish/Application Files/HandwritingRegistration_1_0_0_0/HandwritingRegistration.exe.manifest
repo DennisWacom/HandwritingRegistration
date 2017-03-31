@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="HandwritingRegistration.exe" version="1.0.0.0" publicKeyToken="60ec6d9c9413f611" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="HandwritingRegistration" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="HandwritingRegistration.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="stdole" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Florentis.InteropFlSigCapt.dll" size="19264">
+      <assemblyIdentity name="Florentis.InteropFlSigCapt" version="3.0.4.0" publicKeyToken="9FBFEA2D6FDC8A6C" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>pOp1QhIQa1dKooPv5bJgy7lIIdIsOXoAOpBKX0L+5ec=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Florentis.InteropFlSigCOM.dll" size="93488">
+      <assemblyIdentity name="Florentis.InteropFlSigCOM" version="3.0.4.0" publicKeyToken="9FBFEA2D6FDC8A6C" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/HpVOLjdNKGwyM2IrkPpk6DKp2ecygfip+uqebMdH0U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HandwritingRegistration.exe" size="99328">
+      <assemblyIdentity name="HandwritingRegistration" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KLfQintR/SVC5TZNygVIMKPlt7P7ZvzRRqsrS5ekp7c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="HandwritingRegistration.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Wacom-PC\Wacom" issuerKeyHash="4279c7de76604bead8c27036113d92bcdcb6337e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>f0KVuXmtu06NpCVfGXx1e7ZTsDTRXlj3v9NuhnyHpXY=</DigestValue></Reference></SignedInfo><SignatureValue>TqYnFilY/VF82GkrHBXFQ8fXNB9U10S7kwPPiRKZH4gtWH1TVU4X8p47tXQ6MOgRPLuiuJeQn8U+PakKeC9OMxf6p9Ct5Y1uaiJAvp6xT1TLSNjsLatIZGcLpzv+cI+eyH4MrlNx/r4s3lIBKomDGXn+6nIKbMrUOpD2Um3jniM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0aDq1gOF4ccyrwgGjJn0urC3Y4BEcqKwLJ2kzKFgh0OQZduNTtp8hbQ5OtdiV4cR4D3QiAWiaqeSXEgxjKsvks2/9bMOAgc68AF8W3BQruMzydg9Fe7vahUkrDShnj2RSiMxLbXWcE7Xpt8TCmUP9BK7Z6im6iWsP9hqxWpV/0s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="76a5877c866ed3bff7585ed134b053b67b757c195f25a48d4ebbad79b995427f" Description="" Url=""><as:assemblyIdentity name="HandwritingRegistration.exe" version="1.0.0.0" publicKeyToken="60ec6d9c9413f611" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Wacom-PC\Wacom</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Q78z6JAa6d4CGvDpnV4cLJKV4c0mWWNa/JcLtICylfQ=</DigestValue></Reference></SignedInfo><SignatureValue>N07jHU/mCOQYYIL7BcVhCXr6SymTTjC8ejshCxyOmKGw6HbETm6mTiXkGOfPrhPqRUY4OuGu4PDs5XmEAK3tVPtqk7BtKo+7NPA/cRUqz5OvbFkG+v2lYwQXHJ85tXMNKIL/BUgEnJ9RNrloI777bI79WwS2oRbBqmIsk2ROw6c=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0aDq1gOF4ccyrwgGjJn0urC3Y4BEcqKwLJ2kzKFgh0OQZduNTtp8hbQ5OtdiV4cR4D3QiAWiaqeSXEgxjKsvks2/9bMOAgc68AF8W3BQruMzydg9Fe7vahUkrDShnj2RSiMxLbXWcE7Xpt8TCmUP9BK7Z6im6iWsP9hqxWpV/0s=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQLIO2Hj7onJVMXFn5F1oiVjANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAVwBhAGMAbwBtAC0AUABDAFwAVwBhAGMAbwBtMB4XDTE1MDQyOTEwMDQzNFoXDTE2MDQyODE2MDQzNFowJzElMCMGA1UEAx4cAFcAYQBjAG8AbQAtAFAAQwBcAFcAYQBjAG8AbTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0aDq1gOF4ccyrwgGjJn0urC3Y4BEcqKwLJ2kzKFgh0OQZduNTtp8hbQ5OtdiV4cR4D3QiAWiaqeSXEgxjKsvks2/9bMOAgc68AF8W3BQruMzydg9Fe7vahUkrDShnj2RSiMxLbXWcE7Xpt8TCmUP9BK7Z6im6iWsP9hqxWpV/0sCAwEAATANBgkqhkiG9w0BAQsFAAOBgQDMX0pQ1zlQYMSZ5mWA+W50wuX5nlkZZOPo3l3Ulh4wJkpvk6L+QeZ2IWXfz5O9ZuLnmfqqkUMrsnxGHeyqf/jN1cen/VyQLhReZqJupvO35oB1I1PecLM/wLxeL52hSD12uBxJ26ks/sNLXZrmHh6w2eR3xQH5iNGUpFdSIMr9oQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

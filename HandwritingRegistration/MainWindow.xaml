@@ -1,0 +1,34 @@
+﻿<Window x:Class="HandwritingRegistration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sigCom="clr-namespace:Florentis;assembly=Florentis.InteropFlSigCOM"
+        xmlns:sigCap="clr-namespace:Florentis;assembly=Florentis.InteropFlSigCapt"
+        Title="Registration" Height="800" Width="1280" Icon="wacom.ico" Closed="Window_Closed" Loaded="Window_Loaded" Initialized="Window_Initialized">
+    <Grid Background="White" x:Name="MainGrid">
+        <Image HorizontalAlignment="Left" Height="800" Margin="0,0,0,0" VerticalAlignment="Top" Width="1280" Source="HandwritingRegistration.png" Stretch="None"/>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="782" Margin="257,120,0,0" Height="62">
+            <InkCanvas x:Name="inkName" HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="782" StylusUp="inkName_StylusUp" MouseUp="inkName_MouseUp" />
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="84" Margin="404,184,0,0" Height="64">
+            <InkCanvas x:Name="inkM" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="84" Background="{x:Null}" StylusUp="inkM_StylusUp" MouseUp="inkM_MouseUp" />
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="84" Margin="801,184,0,0" Height="64">
+            <InkCanvas x:Name="inkF" Width="84" Height="64" VerticalAlignment="Top" Background="{x:Null}" StylusUp="inkF_StylusUp" MouseUp="inkF_MouseUp"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="782" Margin="257,282,0,0" Height="62">
+            <InkCanvas x:Name="inkContactNo" HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="784" StylusUp="inkContactNo_StylusUp" MouseUp="inkContactNo_MouseUp"/>
+        </Border>
+        <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="782" Margin="257,349,0,0" Height="62">
+            <InkCanvas x:Name="inkEmail" HorizontalAlignment="Left" Height="64" VerticalAlignment="Top" Width="784" StylusUp="inkEmail_StylusUp" MouseUp="inkEmail_MouseUp"/>
+        </Border>
+        <Image x:Name="eraserMode" HorizontalAlignment="Left" Height="40" Margin="1132,49,0,0" VerticalAlignment="Top" Width="40" Source="eraser_grey.png" StylusUp="eraserMode_StylusUp" MouseUp="eraserMode_MouseUp"/>
+        <Image x:Name="penMode" HorizontalAlignment="Left" Height="40" Margin="1081,49,0,0" VerticalAlignment="Top" Width="40" Source="pencil.png" StylusUp="penMode_StylusUp" MouseUp="penMode_MouseUp"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="1081,136,0,0" VerticalAlignment="Top" Width="157" Height="46" Click="btnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Close" HorizontalAlignment="Left" Margin="1081,202,0,0" VerticalAlignment="Top" Width="157" Height="46" Click="btnCancel_Click"/>
+        <Image x:Name="imgSignature" HorizontalAlignment="Left" Height="236" Margin="257,416,0,0" VerticalAlignment="Top" Width="782" Source="white_space.png" MouseDown="imgSignature_MouseDown" Stretch="Fill"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="1081,270,0,0" VerticalAlignment="Top" Width="157" Height="46" Click="btnClear_Click"/>
+        <Button x:Name="btnShowCounterView" Content="Show Counter View" HorizontalAlignment="Left" Margin="1081,334,0,0" VerticalAlignment="Top" Width="157" Height="46" Click="btnShowCounterView_Click"/>
+        <Label Content="TAP TO SIGN" HorizontalAlignment="Left" Margin="582,624,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
